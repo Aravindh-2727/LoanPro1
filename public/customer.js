@@ -54,7 +54,7 @@ async function loadCustomerDashboard(customer) {
   document.getElementById("dashboardStatus").textContent = "Loading your dashboard...";
 
   try {
-    const API_BASE = "http://localhost:5000/api";
+    const API_BASE = "https://loanpro1-1.onrender.com";
     const res = await fetch(`${API_BASE}/customers/${customer._id}`);
     
     if (!res.ok) {
