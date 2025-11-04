@@ -9,14 +9,10 @@ const app = express();
 
 // ✅ CORS Configuration
 app.use(cors({
-    origin: [
-        'http://localhost:5000',
-        'http://127.0.0.1:5000',
-        'http://localhost:3000',
-        'http://127.0.0.1:5500'
-    ],
-    credentials: true
+  origin: "https://loan-pro1.vercel.app",
+  credentials: true
 }));
+
 
 app.use(bodyParser.json());
 app.use(express.static(path.join(__dirname, 'public')));
