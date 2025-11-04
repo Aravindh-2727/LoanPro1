@@ -14,7 +14,7 @@ const homeStats = document.getElementById("homeStats");
 async function checkServerConnection() {
   try {
     console.log("🔍 Checking server connection...");
-    const response = await fetch(`${API_BASE}/health`);
+    const response = await fetch(`${API_BASE}/api/health`);
     const data = await response.json();
     console.log("✅ Server:", data.status);
     console.log("📊 Database:", data.database);
