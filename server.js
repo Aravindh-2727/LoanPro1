@@ -8,10 +8,14 @@ const path = require('path');
 const app = express();
 
 // ✅ CORS Configuration
+const cors = require("cors");
+
 app.use(cors({
-  origin: "https://loan-pro1.vercel.app",
+  origin: ["https://loan-pro1.vercel.app"],
+  methods: "GET,POST,PUT,DELETE",
   credentials: true
 }));
+
 
 
 app.use(bodyParser.json());
