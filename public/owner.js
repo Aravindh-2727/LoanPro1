@@ -3,7 +3,7 @@ console.log("📊 Owner Dashboard Loaded");
 
 // Define API_BASE only if it doesn't exist
 if (typeof API_BASE === 'undefined') {
-    const API_BASE = "http://localhost:5000/api";
+    const API_BASE = "https://loanpro1-1.onrender.com";
 }
 
 let allCustomers = [];
